@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [wellzio_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.patient_Role_Tests.Patient_Login_Page_Test">
+        <methods>
+          <include name="loginTeardown"/>
+          <include name="loginSession"/>
+          <include name="Sign_in_buttonTest"/>
+          <include name="sign_in_pageTitleTest"/>
+        </methods>
+      </class> <!-- com.patient_Role_Tests.Patient_Login_Page_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [wellzio_Suite] -->
