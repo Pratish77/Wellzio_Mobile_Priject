@@ -23,6 +23,10 @@ public class Patient_Mychart_Page extends Baseclass{
 	@AndroidFindBy (xpath="//*[@class='android.widget.ImageView'and @bounds='[378,726][423,771]']")
 	 
 	public WebElement E_consult_Button;
+	
+	@AndroidFindBy (xpath="//*[@class='android.view.ViewGroup'and @bounds='[160,713][320,800]']")
+
+	public WebElement appoinments;
 
 	public String page_Title()  {
 	   
@@ -40,6 +44,12 @@ public class Patient_Mychart_Page extends Baseclass{
 		   E_consult_Button.click();
 		   
 		   return new Econsult_Page(adw);
+	}
+   public MyAppoinments_Page appointmentsPage() throws InterruptedException 
+	  {
+		   appoinments.click();
+		   
+		   return new MyAppoinments_Page(adw);
 	}
 	
 }

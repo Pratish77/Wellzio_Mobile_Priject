@@ -12,6 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.Utils.TestUtil;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -50,7 +51,7 @@ public class Baseclass {
 	              
     	          DesiredCapabilities dc = new DesiredCapabilities();
 	
-	              dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+	              dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9");
 	
 	              dc.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
 	              
@@ -67,14 +68,20 @@ public class Baseclass {
  	             dc.setCapability("resetKeyboard", true);
  	           
  	              dc.setCapability("autoDismissAlerts", true);
+ 	              
+ 	             dc.setCapability("autoGrantPermissions", true);
 
-	              dc.setCapability(MobileCapabilityType.APP, "C:\\apkFiles\\Wellzio-RELEASE-1.2.166RELEASE.apk");
+
+	              dc.setCapability(MobileCapabilityType.APP, "C:\\apkFiles\\Wellzio-RELEASE-1.2.161RELEASE.apk");
 	              
                   URL url=new URL("http://0.0.0.0:4723/wd/hub");
 	
 	              adw=new AndroidDriver<MobileElement>(url,dc);
 	              
 	              adw.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT,TimeUnit.SECONDS);
+	              
+	            //  adw.manage().deleteAllCookies();
+
 	              
 	              
 	              
@@ -95,6 +102,12 @@ public class Baseclass {
    		Alert alert=adw.switchTo().alert();
    		alert.accept();
    	}
+       public static MobileElement scroll_Method(String textname) {
+      		
+    	   MobileElement listitem=(MobileElement)adw.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView("
+    			   + "new UiSelector().text(\textname));"));   
+    	   return listitem;
+      	}
        
       
     	

@@ -7,6 +7,8 @@ import java.net.MalformedURLException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.patient_Pages.MyAppoinments_Page;
 import com.patient_Pages.Patient_Login_Page;
 import com.patient_Pages.Patient_Mychart_Page;
 import baseInItialization.Baseclass;
@@ -15,12 +17,13 @@ public class Mychartpagetest extends Baseclass {
 	Patient_Login_Page lp;
 	public Patient_Mychart_Page mychartpage;
 	String pagetitle1,actualtitle;
+	
 	Mychartpagetest(){
 		super();
 	}
 	
 	@BeforeMethod
-	public void iniTial() throws MalformedURLException {
+	public void iniTial() throws MalformedURLException, InterruptedException {
 		Session1();
 		lp= new Patient_Login_Page(adw);
 		lp.skip_Button1();

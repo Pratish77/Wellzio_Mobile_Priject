@@ -3,14 +3,21 @@
 <suite name="Failed suite [wellzio_Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.patient_Role_Tests.Patient_Login_Page_Test">
+      <class name="com.patient_Role_Tests.Mychartpagetest">
         <methods>
+          <include name="verifyMychartpage_TitleTest"/>
+          <include name="settings_Page_IconTest"/>
           <include name="loginTeardown"/>
-          <include name="loginSession"/>
-          <include name="Sign_in_buttonTest"/>
-          <include name="sign_in_pageTitleTest"/>
+          <include name="iniTial"/>
         </methods>
-      </class> <!-- com.patient_Role_Tests.Patient_Login_Page_Test -->
+      </class> <!-- com.patient_Role_Tests.Mychartpagetest -->
+      <class name="com.patient_Role_Tests.Econsult_Page_Test">
+        <methods>
+          <include name="E_consult"/>
+          <include name="iniTial"/>
+          <include name="loginTeardown"/>
+        </methods>
+      </class> <!-- com.patient_Role_Tests.Econsult_Page_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [wellzio_Suite] -->

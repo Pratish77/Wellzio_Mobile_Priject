@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.patient_Role_Tests.Mychartpagetest">
+      <class name="com.patient_Role_Tests.MyAppoinments_PageTest">
         <methods>
-          <include name="verifyMychartpage_TitleTest"/>
-          <include name="settings_Page_IconTest"/>
-          <include name="loginTeardown"/>
+          <include name="appoinmentcreationTest"/>
+          <include name="pageTitleTest"/>
           <include name="iniTial"/>
+          <include name="loginTeardown"/>
         </methods>
-      </class> <!-- com.patient_Role_Tests.Mychartpagetest -->
+      </class> <!-- com.patient_Role_Tests.MyAppoinments_PageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

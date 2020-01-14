@@ -19,6 +19,8 @@ public class Patient_Login_Page  extends Baseclass{
 	}
 	@AndroidFindBy (xpath="//*[@class='android.widget.EditText'and @bounds='[0,137][480,227]']")
 	public WebElement Email;
+	@AndroidFindBy(xpath="//android.widget.EditText[@text=‘Email or Mobile Number’]")
+	public WebElement Email1;
 	
 	@AndroidFindBy (xpath="//*[@class='android.widget.EditText'and @bounds='[0,235][480,325]']")
 	public WebElement Passwd;
@@ -46,6 +48,8 @@ public class Patient_Login_Page  extends Baseclass{
 		
 	}
 	public String verifyTitle() {
+		
+		Email.click();
 		
 		return Title.getText();
 		

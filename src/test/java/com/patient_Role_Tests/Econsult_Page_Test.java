@@ -19,6 +19,7 @@ public class Econsult_Page_Test extends Baseclass{
 	String pagetitle1,actualtitle;
 	
 	Econsult_Page Econsultpage ;
+	
 	Econsult_Page_Test(){
 		super();
 	}

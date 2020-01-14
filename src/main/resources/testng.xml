@@ -3,7 +3,7 @@
 <suite name="wellzio_Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.patient_Role_Tests.Patient_Login_Page_Test"/>
+     <class name="com.patient_Role_Tests.Patient_Login_Page_Test"/>
       <class name="com.patient_Role_Tests.Mychartpagetest"/>
       <class name="com.patient_Role_Tests.Econsult_Page_Test"/>
     </classes>

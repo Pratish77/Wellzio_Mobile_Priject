@@ -23,7 +23,7 @@ public Econsult_Page(AndroidDriver<MobileElement> adw) {
 @AndroidFindBy (xpath="//*[@class='android.view.ViewGroup'and @bounds='[66,623][414,695]']")
 
 public WebElement New_Econsult_Button;
-@AndroidFindBy (xpath="//*[@class='android.widget.EditText'and @bounds='[36,374][444,449]']")
+@AndroidFindBy (xpath="//*[@class='android.widget.EditText'and @bounds='[36,374][444,446]']")
  
 public WebElement Enter_econsult_Details;
 @AndroidFindBy (xpath="//*[@class='android.view.ViewGroup'and @bounds='[48,698][432,770]']")
@@ -53,7 +53,7 @@ public WebElement Done_Button;
 
  public void econsult_Create() throws InterruptedException {
 	   New_Econsult_Button.click();
-	   Thread.sleep(2000);
+	   Thread.sleep(3000);
 	   Enter_econsult_Details.sendKeys("Test");
 	   Thread.sleep(2000);
 	   Next_Button.click();
@@ -66,6 +66,7 @@ public WebElement Done_Button;
 
 	  // med_Next_Button.click();
 	   Thread.sleep(4000);
+	   
 	   MobileElement listitem=(MobileElement)adw.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView("
 	   + "new UiSelector().text(\"Next\"));"));   
 	   System.out.println(listitem.getLocation());

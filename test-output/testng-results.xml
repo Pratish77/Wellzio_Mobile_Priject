@@ -1,77 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-10T11:32:00 IST" name="wellzio_Suite" finished-at="2020-01-10T11:35:30 IST" duration-ms="210721">
+  <suite started-at="2020-01-14T14:46:15 IST" name="Default suite" finished-at="2020-01-14T14:46:50 IST" duration-ms="34572">
     <groups>
     </groups>
-    <test started-at="2020-01-10T11:32:00 IST" name="Test" finished-at="2020-01-10T11:35:30 IST" duration-ms="210721">
-      <class name="com.patient_Role_Tests.Patient_Login_Page_Test">
-        <test-method is-config="true" signature="loginSession()[pri:0, instance:com.patient_Role_Tests.Patient_Login_Page_Test@2b4bac49]" started-at="2020-01-10T11:32:00 IST" name="loginSession" finished-at="2020-01-10T11:32:09 IST" duration-ms="9710" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSession -->
-        <test-method signature="sign_in_pageTitleTest()[pri:1, instance:com.patient_Role_Tests.Patient_Login_Page_Test@2b4bac49]" started-at="2020-01-10T11:32:09 IST" name="sign_in_pageTitleTest" finished-at="2020-01-10T11:32:10 IST" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sign_in_pageTitleTest -->
-        <test-method is-config="true" signature="loginTeardown()[pri:0, instance:com.patient_Role_Tests.Patient_Login_Page_Test@2b4bac49]" started-at="2020-01-10T11:32:10 IST" name="loginTeardown" finished-at="2020-01-10T11:32:10 IST" duration-ms="925" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTeardown -->
-        <test-method is-config="true" signature="loginSession()[pri:0, instance:com.patient_Role_Tests.Patient_Login_Page_Test@2b4bac49]" started-at="2020-01-10T11:32:10 IST" name="loginSession" finished-at="2020-01-10T11:32:20 IST" duration-ms="9091" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSession -->
-        <test-method signature="Sign_in_buttonTest()[pri:2, instance:com.patient_Role_Tests.Patient_Login_Page_Test@2b4bac49]" started-at="2020-01-10T11:32:20 IST" name="Sign_in_buttonTest" finished-at="2020-01-10T11:32:20 IST" duration-ms="66" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Sign_in_buttonTest -->
-        <test-method is-config="true" signature="loginTeardown()[pri:0, instance:com.patient_Role_Tests.Patient_Login_Page_Test@2b4bac49]" started-at="2020-01-10T11:32:20 IST" name="loginTeardown" finished-at="2020-01-10T11:32:21 IST" duration-ms="1005" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTeardown -->
-      </class> <!-- com.patient_Role_Tests.Patient_Login_Page_Test -->
-      <class name="com.patient_Role_Tests.Mychartpagetest">
-        <test-method is-config="true" signature="iniTial()[pri:0, instance:com.patient_Role_Tests.Mychartpagetest@fd07cbb]" started-at="2020-01-10T11:32:21 IST" name="iniTial" finished-at="2020-01-10T11:32:46 IST" duration-ms="25755" status="PASS">
+    <test started-at="2020-01-14T14:46:15 IST" name="Default test" finished-at="2020-01-14T14:46:50 IST" duration-ms="34572">
+      <class name="com.patient_Role_Tests.MyAppoinments_PageTest">
+        <test-method is-config="true" signature="iniTial()[pri:0, instance:com.patient_Role_Tests.MyAppoinments_PageTest@36d585c]" started-at="2020-01-14T14:46:15 IST" name="iniTial" finished-at="2020-01-14T14:46:49 IST" duration-ms="34520" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.view.ViewGroup'and @bounds='[160,713][320,800]']})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.view.ViewGroup'and @bounds='[160,713][320,800]']})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+at com.patient_Pages.Patient_Mychart_Page.appointmentsPage(Patient_Mychart_Page.java:50)
+at com.patient_Role_Tests.MyAppoinments_PageTest.iniTial(MyAppoinments_PageTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2a415aa9 (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@class='android.view.ViewGroup'and @bounds='[160,713][320,800]']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JRNB4RM', ip: '192.168.1.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniTial -->
-        <test-method signature="settings_Page_IconTest()[pri:1, instance:com.patient_Role_Tests.Mychartpagetest@fd07cbb]" started-at="2020-01-10T11:32:46 IST" name="settings_Page_IconTest" finished-at="2020-01-10T11:32:48 IST" duration-ms="2036" status="PASS">
+        <test-method signature="pageTitleTest()[pri:1, instance:com.patient_Role_Tests.MyAppoinments_PageTest@36d585c]" started-at="2020-01-14T14:46:49 IST" name="pageTitleTest" finished-at="2020-01-14T14:46:49 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.view.ViewGroup'and @bounds='[160,713][320,800]']})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.view.ViewGroup'and @bounds='[160,713][320,800]']})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+at com.patient_Pages.Patient_Mychart_Page.appointmentsPage(Patient_Mychart_Page.java:50)
+at com.patient_Role_Tests.MyAppoinments_PageTest.iniTial(MyAppoinments_PageTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2a415aa9 (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@class='android.view.ViewGroup'and @bounds='[160,713][320,800]']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JRNB4RM', ip: '192.168.1.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- settings_Page_IconTest -->
-        <test-method is-config="true" signature="loginTeardown()[pri:0, instance:com.patient_Role_Tests.Mychartpagetest@fd07cbb]" started-at="2020-01-10T11:32:48 IST" name="loginTeardown" finished-at="2020-01-10T11:32:49 IST" duration-ms="1021" status="PASS">
+        </test-method> <!-- pageTitleTest -->
+        <test-method is-config="true" signature="loginTeardown()[pri:0, instance:com.patient_Role_Tests.MyAppoinments_PageTest@36d585c]" started-at="2020-01-14T14:46:49 IST" name="loginTeardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1578993409994" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTeardown -->
-        <test-method is-config="true" signature="iniTial()[pri:0, instance:com.patient_Role_Tests.Mychartpagetest@fd07cbb]" started-at="2020-01-10T11:32:49 IST" name="iniTial" finished-at="2020-01-10T11:33:15 IST" duration-ms="25570" status="PASS">
+        <test-method is-config="true" signature="iniTial()[pri:0, instance:com.patient_Role_Tests.MyAppoinments_PageTest@36d585c]" started-at="2020-01-14T14:46:49 IST" name="iniTial" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1578993409998" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniTial -->
-        <test-method signature="verifyMychartpage_TitleTest()[pri:1, instance:com.patient_Role_Tests.Mychartpagetest@fd07cbb]" started-at="2020-01-10T11:33:15 IST" name="verifyMychartpage_TitleTest" finished-at="2020-01-10T11:33:20 IST" duration-ms="5094" status="PASS">
+        <test-method signature="appoinmentcreationTest()[pri:2, instance:com.patient_Role_Tests.MyAppoinments_PageTest@36d585c]" started-at="2020-01-14T14:46:49 IST" name="appoinmentcreationTest" finished-at="2020-01-14T14:46:49 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.view.ViewGroup'and @bounds='[160,713][320,800]']})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.view.ViewGroup'and @bounds='[160,713][320,800]']})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+at com.patient_Pages.Patient_Mychart_Page.appointmentsPage(Patient_Mychart_Page.java:50)
+at com.patient_Role_Tests.MyAppoinments_PageTest.iniTial(MyAppoinments_PageTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2a415aa9 (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+... 36 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@class='android.view.ViewGroup'and @bounds='[160,713][320,800]']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JRNB4RM', ip: '192.168.1.245', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.5'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMychartpage_TitleTest -->
-        <test-method is-config="true" signature="loginTeardown()[pri:0, instance:com.patient_Role_Tests.Mychartpagetest@fd07cbb]" started-at="2020-01-10T11:33:20 IST" name="loginTeardown" finished-at="2020-01-10T11:33:21 IST" duration-ms="993" status="PASS">
+        </test-method> <!-- appoinmentcreationTest -->
+        <test-method is-config="true" signature="loginTeardown()[pri:0, instance:com.patient_Role_Tests.MyAppoinments_PageTest@36d585c]" started-at="2020-01-14T14:46:50 IST" name="loginTeardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1578993410001" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTeardown -->
-      </class> <!-- com.patient_Role_Tests.Mychartpagetest -->
-      <class name="com.patient_Role_Tests.Econsult_Page_Test">
-        <test-method is-config="true" signature="iniTial()[pri:0, instance:com.patient_Role_Tests.Econsult_Page_Test@3571b748]" started-at="2020-01-10T11:33:21 IST" name="iniTial" finished-at="2020-01-10T11:33:50 IST" duration-ms="28899" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iniTial -->
-        <test-method signature="E_consult()[pri:1, instance:com.patient_Role_Tests.Econsult_Page_Test@3571b748]" started-at="2020-01-10T11:33:50 IST" name="E_consult" finished-at="2020-01-10T11:35:29 IST" duration-ms="99355" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- E_consult -->
-        <test-method is-config="true" signature="loginTeardown()[pri:0, instance:com.patient_Role_Tests.Econsult_Page_Test@3571b748]" started-at="2020-01-10T11:35:29 IST" name="loginTeardown" finished-at="2020-01-10T11:35:30 IST" duration-ms="1074" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTeardown -->
-      </class> <!-- com.patient_Role_Tests.Econsult_Page_Test -->
-    </test> <!-- Test -->
-  </suite> <!-- wellzio_Suite -->
+      </class> <!-- com.patient_Role_Tests.MyAppoinments_PageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
